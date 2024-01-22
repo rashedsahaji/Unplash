@@ -13,7 +13,7 @@ class NetworkInterceptor extends InterceptorsWrapper {
     }
     options.contentType = 'application/json';
     options.headers.addAll(
-      {"Authorization": "Client-ID ${Environment.API_KEY}"},
+      {"Authorization": "Client-ID ${AppEnvironment.API_KEY}"},
     );
   }
 
